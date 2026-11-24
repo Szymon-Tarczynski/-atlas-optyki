@@ -1,0 +1,275 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    font-family: Arial, sans-serif;
+
+    background:
+        url("../images/background.jpg") center/cover fixed no-repeat;
+}
+
+main {
+    flex: 1;
+}
+
+/* Wspólne */
+
+.description,
+.article,
+.fact,
+.quiz-box {
+    background: rgba(255, 253, 208, .9);
+    border-radius: 20px;
+}
+
+/* Opisy */
+
+.description {
+    width: 80%;
+
+    margin: 40px auto;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+/* Kafelki */
+
+.cards-container {
+    width: 90%;
+
+    margin: 50px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+}
+
+.card {
+    background: rgba(255, 253, 208, .9);
+
+    padding: 25px;
+
+    color: black;
+
+    text-decoration: none;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, .3);
+}
+
+/* Zdjęcie główne */
+
+.hero-image {
+    width: 90%;
+
+    margin: 40px auto;
+}
+
+.hero-image img {
+    width: 100%;
+
+    max-width: 1200px;
+
+    display: block;
+
+    margin: auto;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, .3);
+}
+
+/* Ciekawostki */
+
+.facts {
+    width: 90%;
+
+    max-width: 1200px;
+
+    margin: 40px auto;
+}
+
+.facts h2 {
+    text-align: center;
+}
+
+.fact {
+    padding: 20px;
+
+    margin-bottom: 15px;
+
+    border-left: 5px solid #d6a400;
+}
+
+/* Artykuły */
+
+.articles {
+    width: 85%;
+
+    max-width: 1200px;
+
+    margin: 40px auto;
+}
+
+.article {
+    display: flex;
+
+    gap: 20px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, .2);
+}
+
+.article-image {
+    width: 250px;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    flex-shrink: 0;
+}
+
+.article-content {
+    flex: 1;
+}
+
+.article-content h2 {
+    margin-top: 0;
+}
+
+.article-content p {
+    line-height: 1.8;
+
+    text-align: justify;
+}
+
+/* Korekcja */
+
+.correction-box {
+    margin-top: 15px;
+
+    padding: 15px;
+
+    background: rgba(255, 255, 255, .7);
+
+    border: 2px solid #dbb32f;
+
+    border-radius: 15px;
+
+    font-weight: bold;
+}
+
+/* Powrót */
+
+.back-button {
+    text-align: center;
+
+    margin: 30px 0;
+}
+
+.back-button a {
+    display: inline-block;
+
+    padding: 15px 25px;
+
+    background: rgba(255, 253, 208, .9);
+
+    color: black;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+}
+
+/* Quiz */
+
+.quiz-box {
+    width: 70%;
+
+    margin: 50px auto;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+.btn {
+    width: 100%;
+
+    padding: 15px;
+
+    margin-bottom: 15px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    background: rgba(255, 253, 208, .9);
+}
+
+.btn-click {
+    background: #ffe658 !important;
+
+    transform: scale(1.05);
+}
+
+.end-btn {
+    background: #d9534f;
+
+    color: white;
+}
+
+/* Symulator */
+
+.simulator-image {
+    width: 100%;
+
+    max-width: 900px;
+
+    margin-bottom: 20px;
+
+    border-radius: 20px;
+
+    transition: opacity .5s;
+}
+
+/* Footer */
+
+.footer {
+    margin-top: auto;
+}
